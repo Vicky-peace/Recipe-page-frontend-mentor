@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+  --dark-rasberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-gray: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body{
+    font-family: "Outfit", sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: var(--eggshell);
+}
+
+h1,
+h2{
+    font-family: "Young Serif", sans-serif;
+    margin: 1.5rem 0 1rem;
+}
+
+h1{
+    font-size: 2rem ;
+    font-weight: 700;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+
+main{
+    background-color: var(--white);
+    border-radius: 10px;
+    max-width: 65ch;
+}
+.container{
+    padding-inline: 2rem;
+}
+
+.section{
+    margin-bottom: 32px;
+}
+.section h2{
+    color: var(--nutmeg);
+    font-weight: 400;
+}
+
+.section ul,
+ol{
+    padding: 0 1rem;
+}
+
+.section li{
+    padding: .5rem;
+}
+.section-preparation{
+    background-color: var(--rose-white);
+    padding: 24px;
+    border-radius: 16px;
+}
+
+.section-preparation ul{
+    padding-left: 28px;
+}
+.section-ingredients{
+    padding: 14px;
+}
+.section-ingredients ul {
+    list-style-type: square;
+   
+  
+  }
+  section-ingredients:first-child {
+    color: var(--nutmeg);
+  }
+
+.section-instructions,
+.section-ingredients{
+ border-bottom: 1px solid var(--light-gray);
+}
+
+.section-instructions ol{
+    padding-left: 28px;
+}
+
+.section-nutrition{
+    padding-left: 28px;
+}
+.section-nutrition p{
+    margin-bottom: 10px;
+}
+
+table{
+    width: 100%;
+    margin-top: 1rem;
+}
+td{
+    padding: 12px 24px;
+    border-bottom: 1px solid var(--light-gray);
+}
+td:nth-child(even){
+    color: var(--nutmeg);
+    font-weight: 800;
+}
+
+tr:last-child td{
+    border: none ;
+}
+
+/* Media Queries */
+@media only screen and(max-width: 768px){
+    main{
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .container{
+        padding-inline: 1rem;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .section-preparation,
+  .section-ingredients,
+  .section-instructions,
+.section-nutrition{
+    padding: 16px;
+}
+table{
+    font-size: 0.8rem;
+}
+}
+
